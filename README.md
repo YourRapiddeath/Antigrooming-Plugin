@@ -1,5 +1,6 @@
 
 # 🛡️ Anti-Grooming-System für Minecraft-Netzwerke
+[![wakatime](https://wakatime.com/badge/user/21ab4ec4-0bff-4728-8b18-7e38dfe33309/project/410a70a4-7497-4c0c-a4ec-8bb12bef69b6.svg)]
 
 Ein intelligentes, datenschutzkonformes Sicherheitssystem für Minecraft-Server, das Grooming und unangemessene Kommunikation erkennt – mit Unterstützung durch Künstliche Intelligenz und menschliche Moderation.
 
