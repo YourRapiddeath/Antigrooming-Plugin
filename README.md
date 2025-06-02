@@ -1,3 +1,4 @@
+
 # 🛡️ Anti-Grooming-System für Minecraft-Netzwerke
 
 Ein intelligentes, datenschutzkonformes Sicherheitssystem für Minecraft-Server, das Grooming und unangemessene Kommunikation erkennt – mit Unterstützung durch Künstliche Intelligenz und menschliche Moderation.
@@ -80,3 +81,67 @@ Dieses Anti-Grooming-System schützt Minecraft-Spieler – insbesondere Kinder �
    - Unbedenklich → Nachricht wird angezeigt
    - Verdächtig → Moderation prüft, ggf. blockiert oder warnt
 5. Feedback der Moderation fließt zurück ins Modell
+```
+
+---
+
+## 🧩 Integration in bestehende Systeme
+
+- Kompatibel mit:
+  - Rangsystemen
+  - Chatformattern
+  - Bann-/Warnsystemen
+- Geringe Serverbelastung (nur wenige kB Daten pro Nachricht)
+- Extrem einfache Integration via Plugin (Bukkit/Spigot/BungeeCord)
+
+---
+
+## 🌍 GlobalTeam – kollektive Moderation
+
+- Freiwilliger Zusammenschluss mehrerer Server
+- Gemeinsame Bewertung anonymisierter Chatbeispiele
+- Verbesserte Modellausbildung durch **Schwarmintelligenz**
+- Stärkeres, robusteres Modell – für alle Teilnehmer
+
+---
+
+## 🎮 Unterstützung weiterer Spiele
+
+- System ist modular aufgebaut – nicht nur auf Minecraft beschränkt
+- Entwickler können das System in eigene Spiele integrieren
+- API & SDK für flexible Anpassung verfügbar
+
+---
+
+## 💸 Preismodell
+
+| Version        | Funktionen                                             | Preis         |
+|----------------|--------------------------------------------------------|---------------|
+| **Free**       | Basis-Schutz, KI-Analyse, DSGVO-konform               | Kostenlos     |
+| **Premium**    | Schnellere Verarbeitung, erweitertes Moderationstool  | Günstig       |
+
+> Ziel: Auch kleine Server sollen sich bestmöglichen Schutz leisten können.
+
+---
+
+## 🎯 Langfristiges Ziel
+
+Ein sich selbst verbesserndes Sicherheitssystem, das:
+
+- Grooming frühzeitig erkennt
+- Falschmeldungen reduziert
+- Auch zukünftige Bedrohungen adaptiv erkennt
+
+---
+
+## 📣 Fazit
+
+Dieses System schützt junge Spieler zuverlässig – ohne sie zu überwachen oder den Spielspaß zu stören.  
+**Sicherheit durch KI – mit Respekt für Privatsphäre.**
+
+---
+
+## 📞 Kontakt & Mitwirkung
+
+Interessiert an einer Integration oder Partnerschaft?  
+Melde dich per [E-Mail/Discord/Website] – wir unterstützen dich gern!
