@@ -117,7 +117,7 @@ Dieses Anti-Grooming-System schützt Minecraft-Spieler – insbesondere Kinder �
 
 | Version        | Funktionen                                             | Preis         |
 |----------------|--------------------------------------------------------|---------------|
-| **Free**       | Basis-Schutz, KI-Analyse, DSGVO-konform, ein Teamchannel, 5000 Nachrichten frei, 150 Abfragen die Minute               | Kostenlos     |
+| **Free**       | Basis-Schutz, KI-Analyse, DSGVO-konform, ein Teamchannel, 5000 Nachrichten frei, 150 Abfragen die Minute, Logfile anlegen, nur volle Updates               | Kostenlos     |
 | **Tier I**    | Infos Folgen  | ,- €       |
 | **Tier II**    | Infos Folgen  | ,- €        |
 | **Tier III**    | Infos Folgen  | ,- €        |
