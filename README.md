@@ -1,150 +1,116 @@
+# 🌐 BungeeCord Multi-Funktions-Plugin
 
-# 🛡️ Anti-Grooming-System für Minecraft-Netzwerke
-![wakatime](https://wakatime.com/badge/user/21ab4ec4-0bff-4728-8b18-7e38dfe33309/project/410a70a4-7497-4c0c-a4ec-8bb12bef69b6.svg)
-
-Ein intelligentes, datenschutzkonformes Sicherheitssystem für Minecraft-Server, das Grooming und unangemessene Kommunikation erkennt – mit Unterstützung durch Künstliche Intelligenz und menschliche Moderation.
+Ein leistungsstarkes All-in-One Plugin für dein BungeeCord-Netzwerk. Dieses Plugin vereint essenzielle Tools für sichere, vernetzte und modulare Kommunikation – perfekt für große und kleine Minecraft-Netzwerke.
 
 ---
 
-## 📌 Inhaltsverzeichnis
+## 🔒 Serverweite Chatüberwachung (Optional)
 
-1. [Überblick](#überblick)
-2. [Warum ein Anti-Grooming-System?](#warum-ein-anti-grooming-system)
-3. [Funktionsweise](#funktionsweise)
-4. [Datenschutz & DSGVO](#datenschutz--dsgvo)
-5. [Ablauf der Analyse](#ablauf-der-analyse)
-6. [Integration in bestehende Systeme](#integration-in-bestehende-systeme)
-7. [GlobalTeam – kollektive Moderation](#globalteam--kollektive-moderation)
-8. [Unterstützung weiterer Spiele](#unterstützung-weiterer-spiele)
-9. [Preismodell](#preismodell)
-10. [Langfristiges Ziel](#langfristiges-ziel)
+Automatische **Erkennung und Blockierung von Grooming-Nachrichten** im globalen Chat.
+
+- Verdächtige Nachrichten werden **geblockt**
+- Weiterleitung an **berechtigte Teammitglieder** zur manuellen Überprüfung (`chatcheck.review`)
+- Zum Schutz minderjähriger Spieler – optional aktivierbar
 
 ---
 
-## 🧠 Überblick
+## 💬 Globaler Serverchat
 
-Dieses Anti-Grooming-System schützt Minecraft-Spieler – insbesondere Kinder – vor gefährlichen, manipulativen Kontakten. Es kombiniert automatische Sprachanalyse mit menschlicher Nachkontrolle und wahrt dabei die Privatsphäre der Spieler.
-
----
-
-## ❗ Warum ein Anti-Grooming-System?
-
-- **Grooming ist eine reale Gefahr** in Online-Games – insbesondere für Minderjährige.
-- **Private Nachrichten** sind oft unkontrolliert – genau dort setzt das System an.
-- **Minecraft** ist eines der meistgenutzten Spiele von Kindern weltweit – Schutz ist essenziell.
+- Netzwerkweiter oder gruppenbasierter Chat
+- Unterstützt **Hex-Farben** (`{#FF0000>}Text{#00FF00<}`) & **Farbverläufe**
+- Volle Anpassung von öffentlichen und privaten Nachrichtenformaten
 
 ---
 
-## ⚙️ Funktionsweise
+## 👥 Teamgruppen-Chats
 
-### 1. KI-gestützte Analyse
-
-- Erkennung kontextueller Risiken durch ein Sprachmodell (LLM)
-- Keine simplen Keyword-Filter – echtes Sprachverständnis
-- Laufendes Training zur Erkennung neuer Muster
-
-### 2. Datenschutzkonform
-
-- Keine Namen, IPs oder personenbezogenen Daten werden übertragen
-- Nur der Nachrichtentext wird anonym analysiert
-- Vollständig DSGVO-konform
-
-### 3. Menschliche Nachkontrolle
-
-- **Kein Auto-Bann-System**
-- Auffällige Nachrichten werden **manuell von Moderatoren geprüft**
-- Falschmeldungen werden vermieden
-
-### 4. Nahtloser Spielverlauf
-
-- Analyse im Hintergrund in Echtzeit (nur wenige Millisekunden)
-- Kein Lag, keine Störung des Chatflusses
-- Eingriff nur bei tatsächlicher Gefahr
+- Eigene Chaträume für Moderation, Admins, Support usw.
+- Serverübergreifend & live
 
 ---
 
-## 🔐 Datenschutz & DSGVO
+## 🤝 Freunde-System
 
-- Analyse erfolgt **ausschließlich anonymisiert**
-- Spieler erhalten **Transparenz beim Serverbeitritt**
-- **Volle Datenhoheit** bleibt beim Serverbetreiber
-- Keine dauerhafte Speicherung von Nachrichten
+- Freundschaften verwalten (Hinzufügen, Entfernen, Liste anzeigen)
+- Anzeige wenn Freunde dem Netzwerk beitreten
 
 ---
 
-## 🔄 Ablauf der Analyse
+## ❌ Moderationssystem
 
-```text
-1. Spieler sendet Nachricht (nicht sofort öffentlich sichtbar)
-2. Nachricht wird an KI weitergeleitet
-3. KI analysiert anonymisiert auf potenziell gefährliche Inhalte
-4. Ergebnis:
-   - Unbedenklich → Nachricht wird angezeigt
-   - Verdächtig → Moderation prüft, ggf. blockiert oder warnt
-5. Feedback der Moderation fließt zurück ins Modell
-```
+- `/ban`, `/kick`, `/mute` inkl. Zeitangabe & Gründen
+- Feedback-Messages konfigurierbar
+- SQLite & MySQL Unterstützung für Datenspeicherung
 
 ---
 
-## 🧩 Integration in bestehende Systeme
+## 📢 Servernachrichten (Broadcasts)
 
-- Kompatibel mit:
-  - Rangsystemen
-  - Chatformattern
-  - Bann-/Warnsystemen
-- Geringe Serverbelastung (nur wenige kB Daten pro Nachricht)
-- Extrem einfache Integration via Plugin (Bukkit/Spigot/BungeeCord)
+- Zeitlich planbare Nachrichten
+- Unterstützung für `%player%`, `%uuid%`, `%time%`, usw.
+- Sichtbarkeit nach Permission & Serverfilter
+- Hex & Gradient-Unterstützung für farbige Gestaltung
 
 ---
 
-## 🌍 GlobalTeam – kollektive Moderation
+## 🏠 MOTD-Manager
 
-- Freiwilliger Zusammenschluss mehrerer Server
-- Gemeinsame Bewertung anonymisierter Chatbeispiele
-- Verbesserte Modellausbildung durch **Schwarmintelligenz**
-- Stärkeres, robusteres Modell – für alle Teilnehmer
-
----
-
-## 🎮 Unterstützung weiterer Spiele
-
-- System ist modular aufgebaut – nicht nur auf Minecraft beschränkt
-- Entwickler können das System in eigene Spiele integrieren
-- API & SDK für flexible Anpassung verfügbar
+- Mehrere Einträge mit Randomizer
+- Hexfarben & Gradients
+- Ideal für Wartungsnachrichten, Events oder Community-Infos
 
 ---
 
-## 💸 Preismodell
+## 📄 Datenschutz (Optional)
 
-| Version        | Funktionen                                             | Preis         |
-|----------------|--------------------------------------------------------|---------------|
-| **Free**       | Basis-Schutz, KI-Analyse, DSGVO-konform, ein Teamchannel, 5.000 Nachrichten frei, 150 Abfragen pro Minute, Logfile anlegen, nur volle Updates               | Kostenlos     |
-| **Tier I**    | Basis-Schutz, KI-Analyse, DSGVO-konform, 3 Teamchannel, 25.000 Nachrichten frei, 200 Abfragen pro Minute, Logfile anlegen, DEV BETA und SNAPSHOT Updates  | ,- €       |
-| **Tier II**    |  Basis-Schutz, KI-Analyse, DSGVO-konform, 5 Teamchannel, 60.000 Nachrichten frei, 500 Abfragen pro Minute, Logfile anlegen, DEV BETA und SNAPSHOT Updates  | ,- €        |
-| **Tier III**    |  Basis-Schutz, KI-Analyse, DSGVO-konform, unbegrenzte Teamchannel, unlimeted Nachrichten frei, 1000 Abfragen pro Minute, Logfile anlegen, DEV BETA und SNAPSHOT Updates  | ,- €        |
-
-> Ziel: Auch kleine Server sollen sich bestmöglichen Schutz leisten können.
+- DSGVO-Hinweis beim ersten Join
+- Benutzerbestätigung möglich (z. B. per GUI oder Command)
+- Inhalte vollständig anpassbar
 
 ---
 
-## 🎯 Langfristiges Ziel
+## 📊 Datenbank-Support
 
-Ein sich selbst verbesserndes Sicherheitssystem, das:
+- **MySQL** für produktive Umgebungen
+- **SQLite** für einfache, lokale Nutzung
 
-- Grooming frühzeitig erkennt
-- Falschmeldungen reduziert
-- Auch zukünftige Bedrohungen adaptiv erkennt
-
----
-
-## 📣 Fazit
-
-Dieses System schützt junge Spieler zuverlässig – ohne sie zu überwachen oder den Spielspaß zu stören.  
-**Sicherheit durch KI – mit Respekt für Privatsphäre.**
+Datenbankinhalte: Freundesliste, Moderationslogs, Chataktivitäten, Einstellungen
 
 ---
 
-## 📞 Kontakt & Mitwirkung
+## ✅ Features im Überblick
 
-Interessiert an einer Integration oder Partnerschaft?  
-Melde dich per [E-Mail/Discord/Website] – wir unterstützen dich gern!
+| Funktion | Beschreibung |
+|---------|--------------|
+| 🔒 Grooming-Erkennung | Optional, blockt & meldet verdächtige Nachrichten |
+| 💬 Globalchat | Mit Hexfarben, Gruppenrouting & Formatierung |
+| 👥 Team-Chats | Private, serverübergreifende Räume |
+| 🤝 Freunde | Mit Join-Benachrichtigung |
+| ❌ Moderation | Ban/Kick/Mute inkl. Grund & Dauer |
+| 📢 Broadcasts | Global oder selektiv, planbar |
+| 🏠 MOTD | Mit Zufallsauswahl & Hexdesigns |
+| 📄 Datenschutz | Hinweis & Bestätigung beim Join |
+| 🗃️ Datenbank | Unterstützt SQLite & MySQL |
+
+---
+
+## 📦 Kompatibilität
+
+- **Server:** BungeeCord / Waterfall
+- **Java:** 11 oder höher
+- **Setup:** YAML-Dateien, einfache Konfiguration
+- **API:** Optional erweiterbar für eigene Module
+
+---
+
+## ℹ️ Kontakt & Support
+
+Du hast Fragen, Feedback oder einen Bug entdeckt?
+
+> Erstelle ein [Issue](https://github.com/deinrepo/issues) oder kontaktiere uns direkt per Discord/Spigot
+
+---
+
+## 📝 Lizenz
+
+Dieses Plugin ist unter [MIT License](LICENSE) lizenziert.
